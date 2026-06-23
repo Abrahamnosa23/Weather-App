@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather App</title>
+  <link rel="icon" type="images/x-icon" href="/images/logo.svg">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page-shell">
+    <div class="app-card">
+      <!-- Header -->
+      <header class="app-header">
+        <div class="header-title">
+            <img src="./images/logo.svg" alt="App Logo">
+          <span>Weather App</span>
+        </div>
+      </header>
+
+      <!-- Search -->
+      <section class="search-section">
+        <form class="search-form" id="searchForm">
+          <label for="cityInput" class="sr-only">Enter city name</label>
+          <input
+            type="text"
+            id="cityInput"
+            name="city"
+            value="Lagos"
+            placeholder="Search city"
+            autocomplete="off"
+          />
+          <button type="submit">Search</button>
+        </form>
+        <div id="errorMessage" class="error-message" role="alert"></div>
+      </section>
+
+      <!-- Main content -->
+      <main class="content-area">
+        <!-- Current weather card -->
+        <section class="current-weather-card" aria-label="Current weather">
+          <div class="hero-icon" id="heroIcon" aria-hidden="true"></div>
+
+          <h1 id="cityName">Lagos, Nigeria</h1>
+          <div class="temperature" id="temperature">32°C</div>
+          <p class="weather-meta">
+            <span id="conditionText">Sunny</span>
+            <span class="dot">·</span>
+            <span id="feelsLike">Feels like 36°C</span>
+          </p>
+        </section>
+
+        <!-- Stats -->
+        <section class="stats-card" aria-label="Weather details">
+          <div class="stat-block">
+            <span class="stat-label">Humidity</span>
+            <span class="stat-value" id="humidity">78%</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-block">
+            <span class="stat-label">Wind</span>
+            <span class="stat-value" id="wind">14 km/h</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-block">
+            <span class="stat-label">UV Index</span>
+            <span class="stat-value" id="uv">High</span>
+          </div>
+        </section>
+
+        <!-- Forecast -->
+        <section class="forecast-section">
+          <h2>5-DAY FORECAST</h2>
+          <div id="forecastList" class="forecast-list"></div>
+        </section>
+      </main>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+``
