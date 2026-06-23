@@ -11,5 +11,5 @@ I built this simple Weather App using HTML, CSS and JavaScript. I used Open-Mete
 
 ## How to run
 
-1. Open `https://abrahamnosa23.github.io/Weather-App/` in your browser.
+1. Open `[Weather App](https://abrahamnosa23.github.io/Weather-App/)` in your browser.
 2. Enter a city name and click Search.
